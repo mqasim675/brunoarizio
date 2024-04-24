@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0e1012;
+  /* height: 100vh; */
+}
+h1, p {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  padding-top: 0 ;
+  padding-bottom: 0 ;
+}
+
+
+#bars {
+  height: 5.54348vh;
+  width: 8.80435vh;
+}
+
+#bars line:first-of-type {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#bars line {
+  -webkit-animation-name: bar;
+  animation-name: bar;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
+}
+#bars line:nth-of-type(2) {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+#bars line {
+  -webkit-animation-name: bar;
+  animation-name: bar;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
+}
+#bars line:nth-of-type(3) {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+#bars line:nth-of-type(4) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+#bars line:nth-of-type(5) {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}

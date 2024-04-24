@@ -1,0 +1,452 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #141414;
+  overscroll-behavior: none;
+  -ms-overflow-style: none;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PP Neue Montreal", sans-serif;
+
+  /* height: 100vh; */
+}
+.scrollExample::-webkit-scrollbar {
+  display: none;
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "PP Neue Montreal", sans-serif;
+}
+.scroll-container {
+  position: sticky;
+  top: 38px;
+  left: 0;
+  right: 0;
+  will-change: transform;
+  overflow: hidden;
+  border-top: 2px solid black;
+}
+.scroll-container .ghost {
+  width: 100vw;
+}
+.thumbnails-container {
+  position: relative;
+  height: 100vh;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  background-color: #141414;
+}
+.thumbnails-container .thumbnails {
+  position: relative;
+  display: flex;
+}
+/* styles.css */
+.horizontal-circle {
+  right: 1400px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #007bff;
+  animation: moveHorizontal 1s linear forwards;
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(100%); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position */
+  }
+}
+.light-font {
+  font-weight: light;
+}
+.thumbnails-container .thumbnails .thumbnail {
+  height: 100vh;
+  width: 1473px;
+  background-color: royalblue;
+}
+.thumbnails > .thumbnail_1 {
+  height: 100vh;
+  width: 1473px;
+  background-color: #f1efed;
+}
+.thumbnails > .thumbnail_2 {
+  height: 100vh;
+  width: 1473px;
+  background-color: #f1efed;
+}
+.thumbnails > .foreword_section {
+  height: 100vh;
+  width: 951px;
+  background-color: #f1efed;
+}
+.thumbnails > .crafting_section {
+  height: 100vh;
+  width: 1328px;
+  background-color: #f1efed;
+}
+.thumbnails > .vertical_scrolling {
+  height: 100vh;
+  width: 700px;
+  background-color: #f1efed;
+}
+.thumbnails-container .thumbnails .first_section {
+  /* background-color: #141414; */
+  background-color: #f1efed;
+  height: 100vh;
+  width: 1470px;
+}
+.thumbnails-container .thumbnails .selected_project {
+  height: 100vh;
+  width: 1470px;
+  background-color: #f1efed;
+  border: none;
+}
+.thumbnails-container .thumbnails .garao_skin_section {
+  height: 100vh;
+  width: 1470px;
+  background-color: #f1efed;
+  border: none;
+}
+.thumbnails-container .thumbnails .award_section {
+  height: 100vh;
+  width: 1155px;
+  background-color: #f1efed;
+  border: none;
+}
+.thumbnails-container .thumbnails .contactsection24 {
+  height: 100vh;
+  width: 929px;
+  background-color: #f1efed;
+  border: none;
+}
+.thumbnails-container .thumbnails .colophone_section {
+  height: 100vh;
+  width: 1500px;
+  background-color: #f1efed;
+  border: none;
+}
+@keyframes move-circle-one {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-circle-two {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-circle-one {
+  animation: move-circle-one 2s linear infinite;
+}
+
+.animate-circle-two {
+  animation: move-circle-two 2s linear infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    border-width: 2px;
+  }
+  50% {
+    transform: scale(1.5);
+    border-width: 4px;
+  }
+  100% {
+    transform: scale(1);
+    border-width: 2px;
+  }
+}
+@keyframes reduceHeight {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 400px;
+  }
+}
+.animate-scale {
+  animation: scale 2s ease-in-out infinite;
+}
+.vertical-section {
+  overflow-y: auto;
+  height: 100vh;
+  padding: 20px;
+}
+.scrollable-div {
+  height: 100vh;
+  width: 1470px;
+  overflow-y: scroll;
+}
+.section-2-card {
+  background-size: cover;
+  background-position: center;
+  transition: height 0.3s ease; /* Add smooth transition for height change */
+}
+
+.subsection {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.subsection.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.custom-button {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: black;
+  color: #fff;
+  /* font-size: 13px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.custom-button:hover {
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.custom-button:hover h2 {
+  opacity: 1;
+}
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  } /* Adjust the distance as needed */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animated-horizontal {
+  animation: moveHorizontal 2s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee:hover {
+  animation: marquee 5s linear infinite;
+}
+/* Doubleb Circle cut to each other animation */
+@keyframes CircleAnimationLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+@keyframes CircleAnimationRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(250px);
+  }
+}
+
+.doubleCircleLeft {
+  animation: CircleAnimationLeft 5s linear forwards;
+}
+
+.doubleCircleRight {
+  animation: CircleAnimationRight 5s linear forwards;
+}
+.generalbruno:hover {
+  transform: rotateX(360deg);
+}
+.generalbruno:hover .g {
+  transform: rotateX(360deg);
+  transition: 1s;
+}
+.generalbruno:hover .e {
+  transform: rotateX(360deg);
+  transition: 1.3s;
+}
+.generalbruno:hover .n {
+  transform: rotateX(360deg);
+  transition: 1.5s;
+}
+.generalbruno:hover .e {
+  transform: rotateX(360deg);
+  transition: 1.7s;
+}
+.generalbruno:hover .r {
+  transform: rotateX(360deg);
+  transition: 1.9s;
+}
+.generalbruno:hover .a {
+  transform: rotateX(360deg);
+  transition: 0.1s;
+}
+.generalbruno:hover .l {
+  transform: rotateX(360deg);
+  transition: 0.3s;
+}
+.generalbruno:hover .b {
+  transform: rotateX(360deg);
+  transition: 0.5s;
+}
+.generalbruno:hover .r {
+  transform: rotateX(360deg);
+  transition: 0.7s;
+}
+.generalbruno:hover .u {
+  transform: rotateX(360deg);
+  transition: 0.9s;
+}
+.generalbruno:hover .n {
+  transform: rotateX(360deg);
+  transition: 1.2s;
+}
+.generalbruno:hover .o {
+  transform: rotateX(360deg);
+  transition: 1.5s;
+}
+.generalbruno:hover .a {
+  transform: rotateX(360deg);
+  transition: 1.7s;
+}
+.generalbruno:hover .r {
+  transform: rotateX(360deg);
+  transition: 1.9s;
+}
+.generalbruno:hover .i {
+  transform: rotateX(360deg);
+  transition: 0.2s;
+}
+.generalbruno:hover .z {
+  transform: rotateX(360deg);
+  transition: 0.5s;
+}
+.generalbruno:hover .o {
+  transform: rotateX(360deg);
+  transition: 0.7s;
+}
+.generalbruno:hover .c {
+  transform: rotateX(360deg);
+  transition: 0.9s;
+}
+.generalbruno:hover .o {
+  transform: rotateX(360deg);
+  transition: 1.1s;
+}
+.generalbruno:hover .m {
+  transform: rotateX(360deg);
+  transition: 1.3s;
+}
+.generalbruno:hover .b {
+  transform: rotateX(360deg);
+  transition: 1.3s;
+}
+/* Twitter */
+.twitter1:hover .t {
+  transform: rotateX(360deg);
+  transition: 1s;
+}
+.twitter1:hover .w {
+  transform: rotateX(360deg);
+  transition: 1.3s;
+}
+.twitter1:hover .i {
+  transform: rotateX(360deg);
+  transition: 1.6s;
+}
+.twitter1:hover .t {
+  transform: rotateX(360deg);
+  transition: 1.9s;
+}
+.twitter1:hover .t {
+  transform: rotateX(360deg);
+  transition: 0.2s;
+}
+.twitter1:hover .e {
+  transform: rotateX(360deg);
+  transition: 0.5s;
+}
+.twitter1:hover .r {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+/* Behance */
+.behance:hover .b {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+.behance:hover .e {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+.behance:hover .h {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+.behance:hover .a {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+.behance:hover .n {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+.behance:hover .c {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
+.behance:hover .e {
+  transform: rotateX(360deg);
+  transition: 0.8s;
+}
