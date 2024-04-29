@@ -41,9 +41,9 @@ const HeroChild_Section = () => {
               </p>
             </div>
           </div>
-          <div className="absolute top-[20%] w-[1470px] ">
+          {/* <div className="absolute top-[20%] w-[1470px] ">
             <div className="horizontal-circle"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

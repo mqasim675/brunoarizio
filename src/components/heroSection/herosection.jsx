@@ -2,7 +2,7 @@
 // /* eslint-disable no-unused-vars */
 // /* eslint-disable react/jsx-pascal-case */
 // eslint-disable-next-line
-import BorderComponent from "./borderLine";
+// import BorderComponent from "./borderLine";
 
 import React, {
   useRef,
@@ -34,6 +34,7 @@ import Award from "./award_recognition/award";
 import ContactSection24 from "./contacts24_section/ContactSection";
 import ColoPhone from "./colorphone25_section/colophone";
 import HeroChild_Section from "./verticalLinesSection";
+import RufSection from "./RufSection/Ruf";
 export const SmoothScroll = () => {
   useEffect(() => {
     AOS.init();
@@ -80,7 +81,7 @@ export const SmoothScroll = () => {
             <div className="first_section">
               <HeroChild_Section />
             </div>
-            <div className="thumbnail_2">
+            <div className="thumbnail_2 ">
               <div>
                 <Thumbnail_2 />
               </div>
@@ -112,9 +113,9 @@ export const SmoothScroll = () => {
             <div className="colophone_section">
               <ColoPhone />
             </div>
-            {/* <div className="colophone_section">
-              <Crfting />
-            </div> */}
+            <div className="ruf_section">
+              <RufSection />
+            </div>
           </div>
         </motion.section>
       </div>

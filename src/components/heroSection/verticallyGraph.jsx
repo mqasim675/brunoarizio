@@ -8,6 +8,7 @@ const VerticalGraph = ({
   childStyNumber,
   mainWidthStyling,
 }) => {
+  // eslint-disable-next-line no-unused-vars
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const VerticalGraph = ({
   }, []);
 
   return (
-    <div className={`${mainWidthStyling} w-[3.2%] h-screen`}>
+    <div className={`${mainWidthStyling} w-[3.2%] h-screen neuemontreal`}>
       <div
         className={`h-[100vw] border-x-2 bg-[#f1efed] border-black w-full pt-[30px] ${parentStyling}`} 
       >

@@ -10,9 +10,9 @@ export const Nav = () => {
 
   return (
     <div className="bg-[#f1efed] fixed w-full z-50 nav">
-      <div className="text-black text-[16px] py-2 px-3 flex justify-between w-[100%] mx-auto relative">
+      <div className="text-black text-[15px] py-2 px-3 flex justify-between w-[100%] mx-auto relative">
         <div className="border-animating" />
-        <div className="w-[25%]">
+        <div className="w-[24%]">
           <div className="studio flex" data-aos="fade-left">
             <p className="flex round_main">
               STUDIO-B{" "}

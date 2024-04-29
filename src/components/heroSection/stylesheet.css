@@ -99,6 +99,7 @@ html {
   width: 1328px;
   background-color: #f1efed;
 }
+
 .thumbnails > .vertical_scrolling {
   height: 100vh;
   width: 700px;
@@ -450,3 +451,9 @@ html {
   transform: rotateX(360deg);
   transition: 0.8s;
 }
+.thumbnails > .ruf_section {
+  height: 100vh;
+  width: 6000px;
+  /* background-color: #f1efed; */
+}
+
