@@ -8,7 +8,7 @@ const ContactForm = () => {
           <div>
             <h3 className="text-[22px]">General enquiries</h3>
             <p className="text-[14px] mt-[10px]">
-              <div className="text-[14px] generalbruno flex">
+              <div className="text-[14px] generalbruno flex cursor-pointer">
                 <span className="g">g</span>
                 <span className="e">e</span>
                 <span className="n">n</span>
@@ -38,7 +38,7 @@ const ContactForm = () => {
           <div className="pt-5">
             <h3 className="text-[22px]">Press</h3>
             <p className="text-[14px] mt-[10px]">Ilona Cepelakova</p>
-            <div className="text-[14px] generalbruno flex">
+            <div className="text-[14px] generalbruno flex cursor-pointer">
               <span className="g">g</span>
               <span className="e">e</span>
               <span className="n">n</span>
@@ -65,7 +65,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="pt-5">
-            <h3 className="text-[22px]">Follow us</h3>
+            <h3 className="text-[22px] cursor-pointer">Follow us</h3>
             <a
               href="https://twitter.com/brunoarizio"
               target="_blank"
@@ -192,7 +192,7 @@ const ContactForm = () => {
                 {" "}
                 <span>we're currently not hiring. </span>
                 <br />{" "}
-                <div className="text-[14px] generalbruno flex">
+                <div className="text-[14px] generalbruno flex cursor-pointer">
                   <span className="g">g</span>
                   <span className="e">e</span>
                   <span className="n">n</span>
@@ -223,7 +223,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="flex justify-between w-[80%] mx-auto pt-[20%]">
-        <div className="text-xs generalbruno flex">
+        <div className="text-xs generalbruno flex cursor-pointer">
           <span className="g">P</span>
           <span className="e">r</span>
           <span className="n">i</span>
@@ -239,7 +239,7 @@ const ContactForm = () => {
           <span className="n">y</span>
         </div>
 
-        <div className="text-xs generalbruno flex">
+        <div className="text-xs generalbruno flex cursor-pointer">
           <span className="g">T</span>
           <span className="e">e</span>
           <span className="n">r</span>
@@ -259,7 +259,7 @@ const ContactForm = () => {
           <span className="z">n</span>
         </div>
 
-        <div className="text-xs generalbruno flex">
+        <div className="text-xs generalbruno flex cursor-pointer">
           <span className="g">E</span>
           <span className="e">n</span>
           <span className="n">d</span> &nbsp;

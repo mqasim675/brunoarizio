@@ -59,10 +59,6 @@ p {
   animation-delay: 0.5s;
 }
 @font-face {
-  font-family: "NeueMontreal"; /*Can be any text*/
+  font-family: "NeueMontreal";
   src: url("./components/fonts/PP_Neue_Montreal/PP Neue Montreal/OTF/PPNeueMontreal-Medium.otf");
 }
-/* .neuemontreal {
-  font-family: "NeueMontreal";
-  font-weight: 300;
-} */

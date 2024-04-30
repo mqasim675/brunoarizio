@@ -16,8 +16,8 @@ const BorderComponent = () => {
             className="m-[5px] border-r border-black"
             style={{
               height: height, 
-              transition: "height 2s ease-in-out", 
-              animation: "reduceHeight 2s forwards", // animation keyframe
+              transition: "height 4s ease-in-out", 
+              animation: "reduceHeight 4s forwards", 
             }}
           />
         </div>

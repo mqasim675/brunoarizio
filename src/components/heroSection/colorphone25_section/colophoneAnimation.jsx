@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import BorderComponent from "./BackgrundLines";
 
 const HoverText = () => {
-  // eslint-disable-next-line no-unused-vars
   const [isScrolling, setIsScrolling] = useState(false);
   const [animationStyle, setAnimationStyle] = useState("paused");
   const [scrollDirection, setScrollDirection] = useState(null);
 
   useEffect(() => {
+    let timeout;
+
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
       const previousScrollPosition = window.prevScrollY;
@@ -19,18 +20,18 @@ const HoverText = () => {
       }
 
       window.prevScrollY = currentScrollPosition; // update previous scroll position
+
       setIsScrolling(true);
       setAnimationStyle("running");
+
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         setIsScrolling(false);
         setAnimationStyle("paused");
-      }, 1000); // Adjust this timeout as needed
+      }, 100); // Adjust this timeout as needed
     };
 
-    let timeout;
     window.prevScrollY = null; // initialize previous scroll position
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {

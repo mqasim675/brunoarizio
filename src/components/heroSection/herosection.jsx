@@ -113,9 +113,9 @@ export const SmoothScroll = () => {
             <div className="colophone_section">
               <ColoPhone />
             </div>
-            <div className="ruf_section">
+            {/* <div className="ruf_section">
               <RufSection />
-            </div>
+            </div> */}
           </div>
         </motion.section>
       </div>

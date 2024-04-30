@@ -457,3 +457,26 @@ html {
   /* background-color: #f1efed; */
 }
 
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* .absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+/* add some styles to make it look like a sidebar */
+.bg-white {
+  background-color: white;
+}
+
+.p-4 {
+  padding: 1rem;
+}
